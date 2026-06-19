@@ -13,7 +13,7 @@ class FacturaBase(BaseModel):
     @property
     def vr_total(self) -> float:
         #consultar el id actual de la factura
-        factura_id_actual = getattr(self, 'facturas_id', None)
+        factura_id_actual = getattr(self, 'id', None)
         total_factura = 0.0
         if not factura_id_actual or not self.transacciones:
             return total_factura

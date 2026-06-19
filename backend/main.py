@@ -1,7 +1,7 @@
 from fastapi import FastAPI, HTTPException, status
-from clientes import Cliente, ClienteCrear, ClienteEditar
-from facturas import Factura, FacturaCrear, FacturaEditar
-from transacciones import Transaccion, TransaccionCrear, TransaccionEditar
+from modelos.clientes import Cliente, ClienteCrear, ClienteEditar
+from modelos.facturas import Factura, FacturaCrear, FacturaEditar
+from modelos.transacciones import Transaccion, TransaccionCrear, TransaccionEditar
 
 
 
@@ -136,9 +136,30 @@ async def crear_transaccion(factura_id: int, datos_transaccion: TransaccionCrear
     return transaccion_val
 
 @app.patch("/transacciones/{id_transaccion}", response_model=Transaccion)
-async def editar_transaccion(id_transaccion: int, datos_transaccion: TransaccionCrear):
-    pass
+async def editar_transaccion(id_transaccion: int, datos_transaccion: Transaccion):
+    for i, obj_transaccion in enumerate(lista_transacciones):
+        if obj_transaccion.id == id_transaccion:
+            transaccion_val = Transaccion.model_validate(
+                datos_transaccion.model_dump()
+            )
+            transaccion_val.id = id_transaccion
+            lista_transacciones[i] = transaccion_val
+            return transaccion_val
+
+    raise HTTPException(
+        status_code=status.HTTP_400_BAD_REQUEST,
+        detail=f"La transacción con id {id_transaccion}, no existe."
+    )
+
 
 @app.delete("/transacciones/{id_transaccion}", response_model=Transaccion)
 async def eliminar_transaccion(id_transaccion: int):
-    pass    
+    for i, obj_transaccion in enumerate(lista_transacciones):
+        if obj_transaccion.id == id_transaccion:
+            transaccion_eliminada = lista_transacciones.pop(i)
+            return transaccion_eliminada
+
+    raise HTTPException(
+        status_code=status.HTTP_400_BAD_REQUEST,
+        detail=f"La transacción con id {id_transaccion}, no existe."
+    ) 
