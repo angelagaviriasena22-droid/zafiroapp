@@ -1,0 +1,5 @@
+# Node modules
+frontend/node_modules/
+
+# Opcional: ignorar cualquier node_modules en cualquier carpeta
+**/node_modules
