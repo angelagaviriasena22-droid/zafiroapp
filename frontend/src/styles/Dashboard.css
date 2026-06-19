@@ -1,0 +1,158 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f7f7f7;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+/* Contenedor principal */
+.travel-container {
+  background-color: #f3eded;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Campos de origen y destino */
+.ruta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.ruta input {
+  width: 40%;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  font-size: 14px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.swap {
+  background-color: #edc967;
+  border: none;
+  border-radius: 12px;
+  padding: 0.6rem 1rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.3s ease;
+}
+
+.swap:hover {
+  background-color: #ffb700;
+  transform: translateY(-3px);
+}
+
+/* Botón agregar destinos */
+.agregar {
+  display: block;
+  margin: 1rem auto;
+  background-color: #edc967;
+  border: none;
+  border-radius: 12px;
+  padding: 0.8rem 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.agregar:hover {
+  background-color: #ffb700;
+  transform: translateY(-3px);
+}
+
+/* Fecha */
+.fecha {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.fecha h3 {
+  color: #1f3d69;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.tipo-viaje {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.tipo {
+  background-color: #edc967;
+  border: none;
+  border-radius: 12px;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.tipo:hover {
+  background-color: #ffb700;
+  transform: translateY(-3px);
+}
+
+/* Input fecha */
+.fecha input[type="date"] {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  font-size: 14px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Pasajeros */
+.pasajeros {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+.pasajeros div {
+  text-align: center;
+}
+
+.pasajeros label {
+  display: block;
+  font-weight: bold;
+  color: #1f3d69;
+  margin-bottom: 0.5rem;
+}
+
+.pasajeros input {
+  width: 60px;
+  padding: 0.4rem;
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Botón siguiente */
+.btn-siguiente {
+  margin-top: 2rem;
+  background-color: #edc967;
+  border: none;
+  border-radius: 12px;
+  padding: 0.8rem 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-siguiente:hover {
+  background-color: #ffb700;
+  transform: translateY(-3px);
+}
