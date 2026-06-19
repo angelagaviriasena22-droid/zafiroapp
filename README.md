@@ -1,4 +1,4 @@
-# 🌍 Zafiro Bloom Tours
+# Zafiro Bloom Tours
 
 ## Descripción del Proyecto
 
@@ -6,7 +6,7 @@ Zafiro Bloom Tours es un sistema de informacion diseñado para facilitar la gest
 
 ---
 
-## 🛠️ Stack Tecnológico
+## Stack Tecnológico
 
 ### Backend
 - Python
@@ -29,7 +29,7 @@ Zafiro Bloom Tours es un sistema de informacion diseñado para facilitar la gest
 
 ---
 
-## 📂 Estructura del Proyecto
+## Estructura del Proyecto
 
 ```text
 Zafiro_Bloom_Tours/
@@ -43,7 +43,7 @@ Zafiro_Bloom_Tours/
 
 ---
 
-# 🚀 Ejecución del Backend
+# Ejecución del Backend
 
 ## 1. Ingresar a la carpeta backend
 
@@ -91,7 +91,7 @@ http://127.0.0.1:8000
 
 ---
 
-# 💻 Ejecución del Frontend
+# Ejecución del Frontend
 
 ## 1. Ingresar a la carpeta frontend
 
@@ -119,7 +119,7 @@ http://localhost:5173
 
 ---
 
-# 🎯 Funcionalidades Principales
+# Funcionalidades Principales
 
 
 - Visualización de información turística.
@@ -128,7 +128,7 @@ http://localhost:5173
 
 ---
 
-# 👥 Integrantes del Proyecto
+# Integrantes del Proyecto
 
 - Taliana Lozada
 - angela gaviria
@@ -137,6 +137,6 @@ http://localhost:5173
 
 ---
 
-# 📌 Estado del Proyecto
+# Estado del Proyecto
 
 Proyecto en desarrollo académico para la gestión y reserva de servicios turísticos mediante un sistema de informacion moderna e interactiva.
