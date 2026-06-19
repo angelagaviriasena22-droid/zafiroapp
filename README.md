@@ -1,10 +1,9 @@
-# Zafiro Bloom Tours
+#  Zafiro Bloom Tours
 
 ## Descripción del Proyecto
 
 Zafiro Bloom Tours es un sistema de informacion diseñado para facilitar la gestión y reserva de paquetes turísticos. Los usuarios pueden consultar destinos disponibles, reservar paquetes turísticos y crear viajes personalizados según sus preferencias, ofreciendo una experiencia más cómoda y adaptada a sus necesidades.
 
----
 
 ## Stack Tecnológico
 
