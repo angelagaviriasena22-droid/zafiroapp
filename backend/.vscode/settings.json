@@ -1,6 +1,0 @@
-{
-    "python.analysis.extraPaths": [
-        "./app/modelos/modelos",
-        "./app/modelos"
-    ]
-}
